@@ -4,16 +4,16 @@ import java.time.LocalDateTime;
 
 public class TopicResponseDTO {
     private String id;
-    private String tittle;
+    private String title;
     private String description;
     private LocalDateTime createdAt;
 
     public TopicResponseDTO() {
     }
 
-    public TopicResponseDTO(String id, String tittle, String description, LocalDateTime createdAt) {
+    public TopicResponseDTO(String id, String title, String description, LocalDateTime createdAt) {
         this.id = id;
-        this.tittle = tittle;
+        this.title = title;
         this.description = description;
         this.createdAt = createdAt;
     }
@@ -24,11 +24,11 @@ public class TopicResponseDTO {
     public void setId(String id) {
         this.id = id;
     }
-    public String getTittle() {
-        return tittle;
+    public String getTitle() {
+        return title;
     }
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
+    public void setTitle(String title) {
+        this.title = title;
     }
     public String getDescription() {
         return description;

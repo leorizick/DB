@@ -19,7 +19,7 @@ public class TopicServiceImpl implements TopicService {
 
     @Override
     public TopicResponseDTO createTopic(TopicRequestDTO request) {
-        Topic topic = new Topic(request.getTittle(), request.getDescription());
+        Topic topic = new Topic(request.getTitle(), request.getDescription());
         Topic save = repository.save(topic);
         return toResponse(topic);
     }

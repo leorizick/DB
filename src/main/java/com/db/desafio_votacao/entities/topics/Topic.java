@@ -17,6 +17,7 @@ public class Topic {
     public Topic(String title, String description) {
         this.title = title;
         this.description = description;
+        this.createdAt = LocalDateTime.now();
     }
 
 
