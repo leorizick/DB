@@ -35,6 +35,8 @@ O sistema implementa:
 
 * Antes de rodar a aplicação rodar o comando `mvn clean install` para que o maven installe as dependencias corretamente.
 
+* A aplicação implementa uma camada de UI nas controllers que tem a função de fornecer ao aplicativo mobile as telas no formato JSON, esse json contem o id do campo seu tipo, sua descrição e valor alem dos botões de ação que contem as urls de callback. A url de callback pode ser alterada no application.properties.
+
 * **Etapa 1:**
     * Api mobile de retorno de campos do formulario de criação de topicos: `"GET /api/v1/ui/topics/form"`
     * Criar uma pauta `"POST /api/v1/topics"`
