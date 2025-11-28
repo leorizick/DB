@@ -1,10 +1,9 @@
-package com.db.desafio_votacao.services;
+package com.db.desafio_votacao.services.topic;
 
 import com.db.desafio_votacao.dto.in.topic.TopicRequestDTO;
 import com.db.desafio_votacao.dto.out.topic.TopicResponseDTO;
 import com.db.desafio_votacao.entities.topics.Topic;
 import com.db.desafio_votacao.repositories.topics.TopicRepository;
-import com.db.desafio_votacao.services.interfaces.TopicService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

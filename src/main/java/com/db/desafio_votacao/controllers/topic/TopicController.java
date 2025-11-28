@@ -1,8 +1,8 @@
-package com.db.desafio_votacao.controllers;
+package com.db.desafio_votacao.controllers.topic;
 
 import com.db.desafio_votacao.dto.in.topic.TopicRequestDTO;
 import com.db.desafio_votacao.dto.out.topic.TopicResponseDTO;
-import com.db.desafio_votacao.services.interfaces.TopicService;
+import com.db.desafio_votacao.services.topic.TopicService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,13 +33,13 @@ public class TopicController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TopicResponseDTO> findById(@PathVariable String id){
+    public ResponseEntity<TopicResponseDTO> findById(@PathVariable String id) {
         TopicResponseDTO response = topicService.findTopicById(id);
         return ResponseEntity.ok(response);
     }
 
     @GetMapping
-    public ResponseEntity<List<TopicResponseDTO>> findAll(){
+    public ResponseEntity<List<TopicResponseDTO>> findAll() {
         List<TopicResponseDTO> responseList = topicService.findAll();
         return ResponseEntity.ok(responseList);
     }
