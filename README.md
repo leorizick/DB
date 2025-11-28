@@ -1,6 +1,7 @@
 # Desafio Votação
 
-API REST desenvolvida com Spring Boot 4, MongoDB, Kafka, Docker e mensageria assíncrona para simular o fluxo de um sistema de votação.
+* API REST desenvolvida com Spring Boot 4, MongoDB, Kafka, Docker e mensageria assíncrona para simular o fluxo de um sistema de votação.
+* O sistema consta com endpoints para o aplicativo mobile realizar requisições onde são devolvidos os campos necessarios para o formulario ser criado.
 
 ## Tecnologias
 
