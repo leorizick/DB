@@ -26,6 +26,7 @@ O sistema implementa:
 * Em um cenario real de produção, o consumer do kafka para realizar a votação seria um microsserviço a parte, assim podendo lidar melhor com a escalabilidade para um grande volume de dados.
     Para evitar complexidade no teste, e facilitar a execução/avaliação assim como a estrutura do docker o consumer foi implementado na propria aplicação.
 * Em projetos particulares costumo usar o Lombok para deixar as classes mais limpas evitando codigos como getters e setters, mas sei que tal pratica nao é bem vista em todas as empresas, então optei por deixa-las explicitas na aplicação.
+* Em projetos reais, costumo usar duas camadas de services, geralmente uma service para api que é uma orquestradora de chamadas, chamando a service da camada de domain e fazendo por exemplo o mapper da entidade para o response DTO. Nesta aplicação foi usado somente uma camada para agilizar a programação.
 
 ## Fluxo do sistema
 
